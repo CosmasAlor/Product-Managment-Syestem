@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="mx-auto mt-5 text-center">Product Managment System</h1>
+    
+
+    <div class="w-75 mx-auto">
+        <div class="mb-3">
+          <label for="productName" class="form-label">Product Name</label>
+          <input type="email" class="form-control" id="productName" aria-describedby="emailHelp">
+    
+        </div>
+        <div class="mb-3">
+          <label for="productPrice" class="form-label">Product Price</label>
+          <input type="number" class="form-control" id="productPrice">
+        </div>
+
+        <div class="mb-3">
+            <label for="productCategory" class="form-label">Product Category</label>
+            <input type="text" class="form-control" id="productCategory">
+        </div>
+
+        
+        <div class="mb-3">
+            <label for="productDesc" class="form-label">Product Description</label>
+            <textarea name="productDesc" id="productDesc" class="form-control" cols="5" rows="4"></textarea>
+        </div>
+
+
+        <div class="mb-3">
+            <label for="productImage" class="form-label">Product Image</label>
+            <input type="file"  id="productImage" class="form-control" id="productImage" aria-describedby="emailHelp">
+        </div>
+
+
+        <button id="add" type="submit" class="btn btn-primary" onclick="addProduct()">Add Product</button>
+        <button id="update" type="submit" class="btn btn-secondary d-none" onclick="update()">Update Product</button>
+        
+        <div class="mb-3 mt-4">
+            
+            <input type="search" placeholder="Seach By Name ..." class="form-control" id="search" oninput="search()"/>
+        </div>
+    </div>
+
+
+<div class="myProducts m-5">
+    <div class="container">
+        <h2>Products</h2>
+        <div class="row " id="Data">
+
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
